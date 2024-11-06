@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* aqui é as cores dos titulos*/
+
+:root {
+    --cor-principal: #ffe600;
+    --cor-secundaria: #557292;
+    --cor-destaque: #8c00ff;
+}
+/* font */
+body {
+    background-color: rgb(35, 35, 40);
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 900;
+}
+/* cor dos titulos*/
+
+section  {
+
+    color: var(--cor-principal);
+    background-image: url(img/resultado\ do\ enquadramento1.png);
+    background-size: 5%;
+
+}
+
+
+h1, h2, h5, img  {
+
+    color: var(--cor-secundaria);
+    font-weight: 10px;
+    font-size: 50px;
+
+}
+
+
+p, p1, a {
+
+    color: var(--cor-secundaria);
+    font-weight: 700;
+    font-size: 20px;
+    
+
+}
+
+h1, h2, h5, p, p1 {
+    color: var(--cor-secundaria);
+    font-weight: 700;
+    font-size: 200;
+}
+/* footer */
+footer a {
+    color: var(--cor-principal)
+}
+/* quando você passa o mouse */
+/*fato curioso que o alura é burro e fez um codigo que não funcionava o hover, mas eu arrumei*/
+
+.btn-hover:hover {
+    color: var(--cor-destaque); /* Muda a cor ao passar o mouse */
+    text-decoration: underline; /* Adiciona um sublinhado */
+    transition: color 0.3s ease; /* Transição suave */
+}
+
+.modal.show {
+    animation: fadeIn 0.5s ease; /* Animação de entrada suave */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro para o modal */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* opacidade */
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Aqui você tem que fazer o "import" de forma resumida -->
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- aqui embaixo você ta importando um modelo de classes e simbulos--> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+   <!-- aqui você ta puxando o seu css que criou-->
+    <link rel="stylesheet" href="style.css">
+    <!--titulo que aparece na aba do site do google-->
+    <title>Franoli's</title>
+<!-- aqui você coloca o titulo do arquivo-->
+    <title> gio </title>
+</head>
+<!-- aqui a genet começa a fazer o corpo e dar vida ao titulo principal-->
+<body>
+<!-- aqui nós alinhamos no centro superior-->
+    <header> 
+   <!-- perceba que nessa imagem eu usei o circle, então a imagem vai virar uma bola-->
+<div>
+    <section>
+   <h1>     
+   <img src="img/giocosmo.png" alt="icon" class="rounded-circle" width="300" height="300" srcset=""> Gio Franoli 
+   </h1>
+   </section>
+</div>
+
+<h2 class="container text-center">"Apenas uma capivara que gosta de desenhar" da silva</h2>
+
+</header>
+<!--   aqui a gente usa o container, se você aumentar os numeros muda o modelo, pode ser o tamanhou ou curva  -->
+ <!-- aqui é o retangulo também-->
+<main class="container mt-5">
+    <h2 class="text-center">Aqui alguns de meus Desenhos: </h2>
+   <div class="row">
+<!-- mude o md-6 para menor ou para maior >6 = maior 6< menor-->
+    <div class="col-md-6">
+    <!-- aqui a gente usa o card para esse modelo retangular em tudo na imagem-->
+        <div class="card">
+        <img src="img/amanithanatos.png" class="card-img-top">
+    <!-- corpo da carta ou seja, titulo e o texto -->
+        <div class="card-body">
+        <h5 class="card-title"> "Amanithanatos" </h5>
+        <p class="card-text"> O cogumelo mais tripofóbico que você verá</p>
+        <!-- botão azul do google que abre outra aba-->
+        <button type="button" class="btn btn-link btn-hover" data-bs-toggle="modal" data-bs-target="#modal1">Mais</button>
+
+    </div>
+    </div>
+</div>
+<!--  repetimos o de cima com a diferença que o #modal agora é a versão 3, modal é literalmente um modelo de botão-->
+  <!-- tamo usando o modal como uma "lista"-->
+<div class="col-md-6">
+<div class="card">
+<img src="img/bfrost.png" class="card-img-top">
+    <div class="card-body">
+
+        <h5 class="card-title"> "Black Frost" </h5>
+
+<p class="card-text">Wendigo da neve todo fofinho</p>
+
+<button type="button" class="btn btn-link btn-hover" data-bs-toggle="modal" data-bs-target="#modal3">Mais</button>
+
+
+        
+</div>
+</div>
+</div>
+
+</main>
+<!-- aqui a gente pega o modal como a lista então caso você precise-->
+ <!-- escolher o card que você queira que o texto apareça quando você clique no card-->
+<div class="modal" id="modal1" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Amanithanatos</h5>
+               <!-- classe, e fonte do texto ali no aria-label-->
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <!-- aqui são os paragrafos, fotos e os links para seila oq vc vai usar-->
+            </div>
+            <div class="modal-body">
+                <p>Desenhei isso como meu personagem de um RPG que um amigo meu quis fazer, até agora o maldito nem começou</p>
+                <p>Foi o maior erro da minha vida, pq ele gostou e me escraviza pra fazer mais ilustração pra ele (isso é um pedido de ajuda)</p>
+                <img class="text-center" src="img/amanithanatos.png" width="400" height="400" alt="Amanithanatos" >
+            </div>
+            <div class="modal-footer">
+                
+                <a href="https://www.instagram.com/p/C_Udkh6MS40/?img_index=1">Post no Instagram</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- aqui é o card 2 -->
+<div class="modal" id="modal3" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Black Frost</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Um Desenho que fiz num pique de madrugada, do nada me senti inspirado e fiquei até as 3 da amnhã fazendo.</p>
+                <p>Queria usar esse design pra algum personagem de RPG, também, mas ainda to em dúvida.</p>
+                <img class="text-center" src="img/bfrost.png"  width="400" height="400" alt="Black Frost">           
+             </div>
+            <div class="modal-footer">
+                <a href="https://www.instagram.com/p/C-rjHl-uESa/">Post no Instagram</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- aqui é o rodape né, então bota suas coisas ai e tamo junto-->
+<footer class="container py-5">
+    <h2 class="container"> Você também pode me encontrar aqui: </h2>
+    <h2 class="badge bg-secondary text-center"><a href="https://www.instagram.com/giofranoli/">Insta </a> </h2>
+    <h2 class="badge bg-secondary text-center"><a href="https://steamcommunity.com/profiles/76561198450673061/">Steam </a></h2>
+ 
+    <!-- copyright-->
+    <p class="my-5 text-center">© Copyright 2024. Nenhuma vaca foi ferida no processo.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
